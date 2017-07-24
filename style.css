@@ -158,30 +158,33 @@ header #logo {
 #main_content {
   background-color: #DEFFFF;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 #main_content > div {
-  padding: 20px;
+  /*padding: 20px;*/
 
 }
 @media screen and ( min-width: 600px ){
-  /*#main_content {
-   display: flex;
+  #main_content {
+    padding: 20px;
   }
   #main_content > div {
-    flex: 4;
+    /*padding: 20px;*/
   }
-  #main_content > div:last-child {
-    flex: 1;
+  /*#main_content > div:last-child {
+    padding-top: 0;
   }*/
 }
 
 @media screen and ( min-width: 900px ){
   #main_content {
    display: flex;
+   padding: 0;
   }
   #main_content > div {
-    flex: 4;
+    flex: 3;
+    padding: 20px;
   }
   #main_content > div:last-child {
     flex: 1;
@@ -214,20 +217,27 @@ header #logo {
     /* flex-basis: 30%; */
     flex: 1;
   }
-    /*ul{
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }*/
-    /*li{
-        padding: 2%;
-        margin: 5px;
-        flex: 1 1 44.2%;
-        background: #fcf;
-    }
-    .inner{
-        flex: 1 1 100%;
-    }*/
+
+}
+
+#site_footer {
+text-align: center;
+}
+
+#site_footer nav {
+justify-content: center;
+display: flex;
+}
+
+#site_footer nav a {
+  display: block;
+  padding: 10px 2%;
+  background: #ffdddd;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  /*flex: 1;*/
+  margin-right: 5px;
+
 }
 
 /*@media screen and ( min-width: 1000px ){
